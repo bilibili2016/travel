@@ -14,6 +14,7 @@ import HomeSwiper from './component/Swiper.vue'
 import HomeIcons from './component/Icons.vue'
 import HomeRecommend from './component/Recommend.vue'
 import HomeWeekend from './component/Weekend.vue'
+import  axios from 'axios'
 export default {
   name: 'Home',
   components: {
@@ -22,6 +23,15 @@ export default {
     HomeIcons,
     HomeRecommend,
     HomeWeekend
+  },
+  methods:{
+    getHomeInfo () {
+      axios.get('/api/index.json')
+        .then(this.getHomeInfoSuccess)
+    }
+  },
+  mounted () {
+    this.getHomeInfo()
   }
 }
 </script>
