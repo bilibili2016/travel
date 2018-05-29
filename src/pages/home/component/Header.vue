@@ -50,6 +50,6 @@ export default {
       text-align: center
       color: #fff
       .arrow-icon
-        margin-left: -0.4rem
+        /*margin-left: -0.4rem*/
         font-size: .24rem
 </style>
