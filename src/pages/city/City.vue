@@ -38,7 +38,6 @@ export default {
         .then(this.getCityInfoSuccess)
     },
     getCityInfoSuccess(res){
-      console.log(res);
       res = res.data;
       if(res.ret && res.data){
         const result = res.data;
@@ -54,6 +53,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
 
 </style>
