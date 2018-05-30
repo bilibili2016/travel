@@ -4,7 +4,7 @@
       <span>热销推荐</span>
     </div>
     <ul>
-      <li class="item" v-for="item in recommendList" :key="item.id">
+      <li class="item" v-for="item in lists" :key="item.id">
         <div class="item-img-wrapper">
           <img class="item-img"
           :src="item.imgUrl" alt="">
@@ -22,35 +22,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList:[
-        {
-          id:'001',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg',
-          title:'北京欢乐谷',
-          desc:'朝阳区'
-        },
-        {
-          id:'002',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg',
-          title:'世界花卉大观园',
-          desc:'丰台区'
-        },
-        {
-          id:'003',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-          title:'北京野生动物园',
-          desc:'大兴区'
-        },
-        {
-          id:'004',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1602/68/68aa05adb5315f9990.water.jpg_200x200_ce3d2658.jpg',
-          title:'北京海洋馆',
-          desc:'西城区'
-        }
-      ]
-    }
+  props:{
+    lists:Array
   }
 }
 </script>

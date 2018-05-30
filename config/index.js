@@ -10,12 +10,11 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    //webpack-dev-server提供的
     proxyTable: {
-      '/api':{
+      '/api' : {
         target:'http://localhost:8080',
         pathRewrite:{
-          '^api':'/static/mock'
+          '^/api':'/static/mock'
         }
       }
     },
