@@ -48,7 +48,6 @@ export default {
         this.recommendList = result.recommendList
         this.weekendList = result.weekendList
       }
-      console.log(res);
     }
   },
   mounted () {
