@@ -39,7 +39,6 @@ export default {
       list:[]
     }
   },
-//  getter类似于组件中的computed作用，当我们需要根据state数据计算出新的数据的时候，借助getter提供新的数据，避免数据的冗余
   methods:{
     handleCityClick (city) {
       this.changeCity(city)
