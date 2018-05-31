@@ -12,8 +12,11 @@
         </div>
       </div>
     </div>
-    <common-banner :imgs="imgs" v-show="showBanner"
-    @close="handleGalleryClose"></common-banner>
+    <common-banner
+          :imgs="imgs"
+          v-show="showBanner"
+          @close="handleGalleryClose"
+    ></common-banner>
   </div>
 </template>
 
