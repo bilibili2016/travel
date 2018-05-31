@@ -12,16 +12,16 @@
         </div>
       </div>
     </div>
-    <common-banner
+    <common-gallery
           :imgs="imgs"
           v-show="showBanner"
           @close="handleGalleryClose"
-    ></common-banner>
+    ></common-gallery>
   </div>
 </template>
 
 <script>
-import commonBanner from 'common/gallery/Gallery'
+import commonGallery from 'common/gallery/Gallery'
   export default {
     name: 'detailBanner',
     data () {
@@ -34,7 +34,7 @@ import commonBanner from 'common/gallery/Gallery'
       }
     },
     components:{
-      commonBanner
+      commonGallery
     },
     methods:{
       handleBannerClick () {
